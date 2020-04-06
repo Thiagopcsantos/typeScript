@@ -19,18 +19,26 @@ switch (canticadeDeNumerosEnviados) {
 }
 
 
+enum tipoMenu{
+    canciones = 1,
+    albuns,
+    perfil
+
+}
+
+
 var menu:  number = 1
 
 switch(menu){
-    case 1:{
+    case tipoMenu.canciones:{
         console.log("Accede a las canciones")
         break;
     }
-    case 2: {
+    case tipoMenu.albuns: {
         console.log("Accede a los albuns")
         break;
     }
-    case 3 :{
+    case tipoMenu.perfil:{
         console.log("Accede al perfil")
         break;
     }
